@@ -219,3 +219,19 @@ if __name__ == "__main__":
     juego = Juego()
     juego.correr()
 
+
+
+Primero creamos una clase base llamada Comida que solo guarda el color y un método vacío para el efecto, que luego cada tipo de comida va a definir.
+Después hacemos cuatro tipos de comida diferentes, cada uno con un color distinto y un efecto propio:
+La venenosa hace que la serpiente se haga más pequeña y pierda puntos.
+La fit solo suma un punto.
+La alta en grasas suma más puntos pero hace que la serpiente vaya más lenta por un rato.
+La comida para reyes da muchos puntos y hace que la serpiente vaya más rápido.
+Cada tipo de comida tiene su propia fábrica que solo crea ese tipo de comida.
+El juego usa estas fábricas para crear comidas al azar y mostrar la comida en pantalla con turtle.
+La serpiente es una lista de cuadritos negros que se mueven por la pantalla.
+Cuando la serpiente come una comida, se aplica el efecto correspondiente (sube o baja puntos, cambia tamaño o velocidad) y si no es venenosa, la serpiente crece.
+El juego detecta si la serpiente choca con los bordes o consigo misma y ahí termina.
+La velocidad de la serpiente cambia según el tipo de comida que coma.
+Finalmente, hay un ciclo que mueve la serpiente, verifica si comió, actualiza el puntaje y controla la velocidad.
+
